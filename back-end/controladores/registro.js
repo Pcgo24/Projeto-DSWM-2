@@ -28,7 +28,11 @@ mongoose.connect(process.env.MONGO_URL, {
 .then(() => console.log("Conectado ao MongoDB"))
 .catch(err => console.error("Erro ao conectar ao MongoDB:", err));
 
-// Rota de cadastro de usuário
+/*Padrão de Projeto: Factory Method
+A criação do usuário é feita em três etapas, criar o usuário no Firebase Authentication, no Firestore e no MongoDB.
+As operações de criação para Firebase e MongoDB são tratadas separadamente, e a lógica de criação do usuário é organizada para 
+que cada operação seja facilmente modificada ou substituída sem afetar outras partes do código.*/
+
 router.post("/", async (req, res) => {
     const { name, email, password } = req.body;
 
@@ -48,7 +52,11 @@ router.post("/", async (req, res) => {
 
         const userId = newUser.uid;
 
-        // Cria o usuário no MongoDB
+        /*Padrão de Projeto: Singleton
+        O Firebase Admin SDK é usado aqui para criar um usuário no Firebase Authentication. O padrão Singleton é aplicado na inicialização 
+        do Firebase*/
+
+
         const userMongo = new UserMongo({
             uid: userId,
             name,

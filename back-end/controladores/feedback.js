@@ -6,10 +6,11 @@ const express = require('express');
 const router = express.Router();
 const admin = require('firebase-admin');
 const mongoose = require('mongoose');
-const FeedbackMongo = require('../mongodb/FeedBackMongo'); // Importe o modelo do MongoDB
+const FeedbackMongo = require('../mongodb/FeedBackMongo');
 
 const serviceAccount = require("../db/firebase.json");
 
+// Inicialização do Firebase Admin SDK (não é um padrão diretamente, mas uma configuração inicial)
 if (!admin.apps.length) {
     admin.initializeApp({
         credential: admin.credential.cert(serviceAccount),
@@ -27,7 +28,10 @@ mongoose.connect(process.env.MONGO_URL, {
 }).then(() => console.log("Conectado ao MongoDB"))
   .catch(err => console.error("Erro ao conectar ao MongoDB:", err));
 
-// Fábrica para criação de feedbacks
+/*Padrão de Projeto: Factory Method
+A classe `FeedbackFactory` implementa um padrão de projeto de criação, 
+o Factory Method, que cria feedbacks tanto no Firestore quanto no MongoDB*/
+
 class FeedbackFactory {
     static async createFeedback(feedbackText) {
         // Adicionar feedback no Firestore
@@ -58,6 +62,7 @@ router.post('/create', async (req, res) => {
     }
 
     try {
+        // Usando o padrão Factory Method para criar feedback
         const feedbackIds = await FeedbackFactory.createFeedback(feedbackText); // Usar a fábrica
         res.status(201).json({
             message: 'Feedback enviado com sucesso!',

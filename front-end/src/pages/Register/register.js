@@ -14,7 +14,13 @@ const Register = () => {
         e.preventDefault();
 
         try {
+            /*Padrão de Projeto: Façade
+            A função handleSubmit usa a biblioteca axios para enviar uma requisição HTTP. 
+            Isso simplifica o uso da comunicação com o servidor. O axios faz a operação HTTP sem a necessidade de interagir diretamente
+            com as complexidades da API ou outras dependências.*/
             const response = await axios.post("http://localhost:8000/usuario/registro", { name, email, password });
+
+
             setMessage(response.data.message);
             setError("");
         } catch (err) {

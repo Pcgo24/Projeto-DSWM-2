@@ -16,6 +16,17 @@ if (!admin.apps.length) {
 const db = admin.firestore();
 const userCollection = db.collection("users"); // Referência à coleção de usuários
 
+/*Padrão de Projeto: Singleton
+O Firebase Admin SDK é inicializado apenas uma vez.
+Isso garante que apenas uma instância do Firebase Admin SDK seja criada e utilizada durante a execução do aplicativo*/
+
+
+if (!admin.apps.length) {
+    admin.initializeApp({
+        credential: admin.credential.cert(serviceAccount),
+    });
+}
+
 // Rota de Login
 router.post("/", async (req, res) => {
     const { token } = req.body;
