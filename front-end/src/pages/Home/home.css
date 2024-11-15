@@ -1,0 +1,132 @@
+/* Estilo para preencher a tela */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container da home ocupando a tela inteira */
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: #fff;
+    padding: 20px;
+    min-height: 90vh; /* Supondo que o header tenha 60px de altura */
+  }
+  
+  /* Título em branco */
+  .home-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  /* Descrição em dourado */
+  .home-description {
+    font-size: 1.2em;
+    color: #d4af37;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  /* Endereço e horário de funcionamento em dourado */
+  .home-address,
+  .home-hours {
+    color: #d4af37;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  /* Botão com estilo em dourado */
+  .home-button {
+    background-color: #d4af37;
+    color: #333;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .home-button:hover {
+    background-color: #b89e30;
+  }
+  
+  .home-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+    box-sizing: border-box;
+  }
+  
+  .home-videos video {
+    width: calc(25% - 15px);
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .home-videos video:hover {
+    transform: scale(1.05);
+  }
+
+  .home-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+    box-sizing: border-box;
+  }
+  
+  .home-images img {
+    width: calc(25% - 15px);
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+
+  .home-images img:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .home-images img {
+      width: calc(50% - 15px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-images img {
+      width: calc(100% - 15px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home-videos video {
+      width: calc(50% - 15px); 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-videos video {
+      width: calc(100% - 15px);
+    }
+  }
+  
+  

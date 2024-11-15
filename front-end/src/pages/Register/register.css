@@ -1,0 +1,92 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff8e;
+  }
+  
+  .register-form {
+  background-color: #fff0db;
+  border: 2px solid #d4af37;
+  border-radius: 8px;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .register-form h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  }
+  
+  .register-form label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  }
+  
+  .register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  }
+  
+  .register-form input:focus {
+  border-color: #d4af37;
+  outline: none;
+  }
+  
+  .register-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #d4af37;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  }
+  
+  .register-form button:hover {
+  background-color: #b8972e;
+  }
+  
+  .register-form p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #333;
+  }
+  
+  .register-form p a {
+  color: #d4af37;
+  text-decoration: none;
+  transition: color 0.3s;
+  }
+  
+  .register-form p a:hover {
+  color: #b8972e;
+  }
+  
+  .register-form .error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  }
+  
+  .register-form .success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  }
