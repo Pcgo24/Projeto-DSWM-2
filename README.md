@@ -41,7 +41,7 @@ Descreva brevemente o propósito do projeto, por exemplo:
 ## 👤 Colaboradores
 
 - [Paulo Cesar C. Domingues](https://github.com/Pcgo24) (Autor)
-- [Vitor Bobato](https://github.com/louiszhh) (Autor)
+- [Vitor Bobato](https://github.com/Vitor-Bobato) (Autor)
 
 ## 👨‍💻 Contribuição
 
