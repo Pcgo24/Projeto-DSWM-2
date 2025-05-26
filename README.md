@@ -6,17 +6,17 @@ Este projeto é desenvolvido para a disciplina de Desenvolvimento de Software pa
 
 Descreva brevemente o propósito do projeto, por exemplo:
 
-> O Projeto-DSWM-2 consiste em uma aplicação web/mobile focada em [descrever o objetivo principal: cadastro de usuários, sistema de pedidos, controle de tarefas, etc.]. O sistema foi desenvolvido utilizando tecnologias modernas e priorizando a experiência do usuário e a escalabilidade.
+> O Projeto-DSWM-2 consiste em uma aplicação web/mobile focada em apresentar o salão de beleza Dondokas e dar a oportunidade dos usuários darem o seu feedbak para o estabelecimento. O sistema foi desenvolvido utilizando tecnologias modernas e priorizando a experiência do usuário e a escalabilidade.
 
 ## 🚀 Tecnologias Utilizadas
 
-- [Linguagem 1]  
-- [Linguagem 2]  
-- [Framework/Biblioteca Principal]  
-- [Banco de Dados]  
-- [Demais Ferramentas e Bibliotecas]  
+- JavaScript
+- HTML
+- Css  
+- Firebase  
+- MongoDB
+- NodeJS
 
-> Substitua ou adicione as tecnologias usadas no seu projeto.
 
 ## ⚙️ Como Rodar o Projeto
 
@@ -30,25 +30,13 @@ Descreva brevemente o propósito do projeto, por exemplo:
    ```
 3. Instale as dependências:
    ```bash
-   # Exemplo para Node.js
    npm install
    ```
-   > Ajuste conforme a tecnologia do projeto.
 
 4. Execute o projeto:
    ```bash
-   # Exemplo para Node.js
    npm start
    ```
-   > Ou o comando equivalente para a stack utilizada.
-
-## 📝 Funcionalidades
-
-- [ ] Funcionalidade 1
-- [ ] Funcionalidade 2
-- [ ] Funcionalidade 3
-
-> Liste as principais funcionalidades implementadas e/ou planejadas.
 
 ## 👨‍💻 Contribuição
 
