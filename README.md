@@ -38,6 +38,11 @@ Descreva brevemente o propósito do projeto, por exemplo:
    npm start
    ```
 
+## 👤 Colaboradores
+
+- [Paulo Cesar C. Domingues](https://github.com/Pcgo24) (Autor)
+- [Vitor Bobato](https://github.com/louiszhh) (Autor)
+
 ## 👨‍💻 Contribuição
 
 Contribuições são bem-vindas! Siga os passos abaixo:
